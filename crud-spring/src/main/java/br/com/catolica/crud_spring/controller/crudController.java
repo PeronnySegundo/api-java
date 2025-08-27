@@ -55,4 +55,10 @@ public class crudController {
         }
         return "Pessoa não encontrada";
     }
+
+    @PostMapping("/somar")
+    public Number somarNumeros(@PathVariable float int1, @PathVariable float int2){
+        return int1 + int2;
+    }
 }
+
